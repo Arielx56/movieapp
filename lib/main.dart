@@ -13,12 +13,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: HomePage(),
-      // initialRoute: '/',
-      // routes: {
-      //   '/' : (BuildContext context) => HomePage(),
-      //   'detalle' : (BuildContext context) => PeliculaDetalle()
-      // },
+      // home: HomePage(),
+      initialRoute: '/',
+      routes: {
+        '/' : (BuildContext context) => HomePage(),
+        'detalle' : (BuildContext context) => PeliculaDetalle()
+      },
       
     );
   }

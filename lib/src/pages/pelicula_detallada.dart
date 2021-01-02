@@ -5,9 +5,6 @@ import 'package:movieapp_with_login/src/providers/peliculas_providers.dart';
 
 class PeliculaDetalle extends StatelessWidget {
   
-// final Pelicula pelicula;
-// PeliculaDetalle(this.pelicula);
-
   @override
   Widget build(BuildContext context) {
 
@@ -27,9 +24,6 @@ class PeliculaDetalle extends StatelessWidget {
               [
                 SizedBox(height: 10.0),
                 _posterTitulo(context, datosdelalistadePeliculas),
-                _descripcionPelicula(datosdelalistadePeliculas),
-                _descripcionPelicula(datosdelalistadePeliculas),
-                _descripcionPelicula(datosdelalistadePeliculas),
                 _descripcionPelicula(datosdelalistadePeliculas),
                 _pageViewCastingdeActores(datosdelalistadePeliculas)
         
@@ -112,7 +106,8 @@ class PeliculaDetalle extends StatelessWidget {
     Widget _descripcionPelicula (Pelicula pelicula){
 
       return Container(
-        padding: EdgeInsets.symmetric(horizontal:10.0 ,vertical:20.0 ),
+        padding: EdgeInsets.symmetric(horizontal:10.0 ,vertical: 20.0),
+        margin: EdgeInsets.only(bottom: 80),
         child: Column(
           children: <Widget>[
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movieapp_with_login/src/models/pelicula_model.dart';
+import 'package:movieapp_with_login/src/pages/pelicula_detallada.dart';
 
 class MovieHorizontal extends StatelessWidget {
 
@@ -85,6 +86,7 @@ class MovieHorizontal extends StatelessWidget {
             print('El nombre de la pelicula ${peliculaIndividual.title}');
 
             Navigator.pushNamed(context, 'detalle', arguments: peliculaIndividual);
+            // Navigator.of(context).pushNamed(routeName)
             
           },
         );
